@@ -1,4 +1,4 @@
-# Python Data Science Environment
+# Data Science and ML Environement
 #
 # VERSION       1.0
 
@@ -50,7 +50,7 @@ RUN pip install \
 
 # install python & scientific libraries
 ENV TEMP /tmp
-RUN curl https://raw.githubusercontent.com/ShallowLearning/slearn/master/requirements.txt > $TEMP/requirements.txt
+RUN curl https://raw.githubusercontent.com/joshloyal/mldocker/master/requirements.txt > $TEMP/requirements.txt
 RUN pip install -r $TEMP/requirements.txt
 
 # xgboost
